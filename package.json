@@ -1,0 +1,17 @@
+{
+  "name": "note-maker",
+  "version": "1.0.0",
+  "description": "note creating and sorting cli tool",
+  "bin": {
+    "noteMaker": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Adrian Sun",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^16.1.1"
+  }
+}
