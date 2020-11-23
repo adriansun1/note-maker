@@ -4,7 +4,7 @@ const { getDirectory } = require('./changeLocation');
 function constructDate() {
   const date = new Date();
   const mm = date.getUTCMonth() + 1;
-  const dd = date.getUTCDay();
+  const dd = date.getUTCDate();
   const yy = date.getUTCFullYear();
   return `${yy}-${mm}-${dd}`;
 }
