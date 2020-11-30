@@ -29,7 +29,10 @@ function createNote(title) {
   const date = constructDate();
   const template = buildTemplate(date, title);
   const path = `${getDirectory()}/`;
-  const filename = `${date}_${title.replace(' ', '-')}.md`;
+  const filename = `${date}_${title
+    .replace(/[^a-z0-9 ]/gi, '')
+    .replace(/ /g, '-')
+  }.md`;
   if (fs.existsSync(path + filename)) {
     console.log(`The file '${filename}' already exists`);
     return;
