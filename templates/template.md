@@ -1,10 +1,10 @@
 # %DATE%: %TITLE%
 
-## Content
+# Content
 
-## Work
+# Work
 
-## Ideas
+# Ideas
 
-## #Daily
+# #Daily
 > %DAILY%
