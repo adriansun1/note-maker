@@ -7,7 +7,7 @@ const options = yargs.usage('Usage: -t <title>').options({
     alias: 'title',
     describe: 'Title of the journal entry',
     type: 'string',
-    demandOption: true,
+    demandOption: false,
   },
   l: {
     alias: 'location',
@@ -20,4 +20,6 @@ const options = yargs.usage('Usage: -t <title>').options({
 if (options.location) {
   setDirectory(options.location);
 }
-createNote(options.title);
+if (options.title) {
+  createNote(options.title);
+}

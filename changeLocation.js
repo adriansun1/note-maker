@@ -1,7 +1,10 @@
 const fs = require('fs');
+const path = require('path');
 
 function setDirectory(location) {
-  fs.writeFileSync(`${__dirname}/dir.txt`, location, 'utf-8');
+  const dir = path.resolve(location);
+  console.log(`Setting default directory to: \n${dir}`);
+  fs.writeFileSync(`${__dirname}/dir.txt`, dir, 'utf-8');
 }
 
 function getDirectory() {
